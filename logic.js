@@ -573,11 +573,3 @@ document.addEventListener("click", (event) => {
         document.documentElement.style.setProperty("--background-image-url-8192", "url('" + tile8192.value + "')");
     }
 })
-
-function shareToLinkedIn() {
-    var articleUrl = encodeURI('[YOUR-LINK]');
-    var articleSource = encodeURI('[YOUR-LINK]');
-
-    var linkedInUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${articleUrl}&source=${articleSource}`;
-    window.open(linkedInUrl, '_blank');
-} 
